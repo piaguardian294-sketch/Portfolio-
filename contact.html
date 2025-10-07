@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Pia L. Guardian</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #fce7f3 0%, #e9d5ff 100%); /* pink-purple gradient */
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    .top-nav {
+      background: #f5d0fe; /* soft purple-pink */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+    }
+
+    .nav-menu a {
+      display: block;
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #9d174d; /* deep pink */
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .nav-menu a:hover {
+      background: #fbcfe8; /* light pink hover */
+      border-bottom-color: #d946ef;
+      color: #701a75;
+    }
+
+    .nav-menu a.active {
+      color: #a21caf;
+      border-bottom-color: #d946ef;
+    }
+
+    /* Main Content */
+    .main-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #701a75;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Contact Cards */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .contact-card {
+      background: #fde2e4; /* soft pink box */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(217, 70, 239, 0.15);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(236, 72, 153, 0.3);
+    }
+
+    .contact-icon {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #db2777; /* pink accent */
+    }
+
+    .contact-card h3 {
+      margin-bottom: 10px;
+      color: #9d174d;
+    }
+
+    .contact-card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .contact-link {
+      color: #c026d3;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: #fde2e4; /* pinkish background */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(217, 70, 239, 0.15);
+      margin-top: 40px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #701a75;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #9d174d;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #f9a8d4;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      background-color: #fff0f6;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #d946ef;
+    }
+
+    .form-group textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: linear-gradient(90deg, #db2777, #d946ef);
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        flex-wrap: wrap;
+      }
+
+      .nav-menu a {
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <h1>Get In Touch</h1>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <h3>Email</h3>
+        <p>Send me an email for inquiries or collaboration</p>
+        <a href="mailto:piaguardian294@gmail.com" class="contact-link">piaguardian294@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">📱</div>
+        <h3>Phone</h3>
+        <p>Call or text me for urgent matters</p>
+        <a href="tel:+639811988324" class="contact-link">+63 981 198 8324</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h3>Location</h3>
+        <p>Based in M. Roxas, Bulan, Sorsogon, Philippines</p>
+        <span class="contact-link">M. Roxas, Bulan, Sorsogon, Philippines</span>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">💼</div>
+        <h3>LinkedIn</h3>
+        <p>Connect with me professionally</p>
+        <a href="https://www.linkedin.com/in/pia-guardian-236041389" 
+           class="contact-link" 
+           target="_blank" 
+           rel="noopener noreferrer">View Profile</a>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <h2>Send Me a Message</h2>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
+
+

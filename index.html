@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pia L. Guardian - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #F8E1FF; /* 🌸 light purple-pink background */
+        }
+
+        .top-nav {
+            background: #E2B6FF; /* 💜 soft purple-pink navigation */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #4B0082; /* dark purple text */
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            background: #F3C8FF; /* 💗 pinkish purple hover */
+            border-bottom-color: #C77DFF;
+            color: #3B0764;
+        }
+
+        .nav-menu a.active {
+            color: #7A1FA2; /* deep purple-pink */
+            border-bottom-color: #C77DFF;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            text-align: center;
+            background: #FBEAFF; /* 💜 pastel purple-pink box background */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(120, 0, 150, 0.1);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #8425A5; /* vibrant purple-pink heading */
+            margin-bottom: 20px;
+        }
+
+        .welcome-text {
+            font-size: 1.2em;
+            color: #6A1B9A; /* soft deep purple text */
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                flex-wrap: wrap;
+            }
+
+            .nav-menu a {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="welcome-text">
+            I am <strong>Pia L. Guardian</strong>, an Information Systems student passionate and motivated in software development and web technologies. 
+            My goal is to build a successful career in the IT field where I can apply my skills, learn continuously, and grow both personally and professionally. 
+            I’m driven by curiosity, creativity, and dedication to excellence.
+        </p>
+    </div>
+</body>
+</html>
+
+
+
+
